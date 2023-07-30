@@ -1,15 +1,41 @@
-.boxOne{
-    margin: 250px;
-    width: 100px;
-    height: 150px;
-    background-color: red;
-    padding: 10px;
+/* Optional CSS styling for the frames and viewport */
+.viewport {
+    position: relative; /* Establishing the reference position for stacked frames */
+    width: 400px; /* Set the desired width of the viewport */
+    height: 300px; /* Set the desired height of the viewport */
+    border: 2px solid #ccc;
+    padding: 20px; /* Adding some room on the outside */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px; /* Adding perspective for 3D effect */
 }
 
-.boxTwo{
-    margin: 250px;
-    width: 100px;
-    height: 150px;
-    background-color: blue;
-    padding: 10px;
+.frame {
+    width: 80px;
+    height: 80px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    position: absolute; /* Positioning each frame absolutely */
+    top: 50%; /* Centering the frames vertically */
+    left: 50%; /* Centering the frames horizontally */
+    transform: translate(-50%, -50%) translateZ(var(--z, 0)); /* Adding translateZ for 3D stacking */
 }
+
+/* Adjust the z-index for each frame */
+.frame-1 { --z: 0px; }
+.frame-2 { --z: -50px; }
+.frame-3 { --z: -100px; }
+.frame-4 { --z: -150px; }
+.frame-5 { --z: -200px; }
+.frame-6 { --z: -250px; }
+.frame-7 { --z: -300px; }
+.frame-8 { --z: -350px; }
+.frame-9 { --z: -400px; }
+.frame-10 { --z: -450px; }
