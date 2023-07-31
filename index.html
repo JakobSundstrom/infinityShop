@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ten Frames Inside a Viewport</title>
+    <title>Ten Frames Inside a Viewport with Custom Scrollbar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="viewport">
+    <div class="viewport" id="viewport">
         <!-- Ten divs with classes "frame-1" to "frame-10" -->
         <div class="frame frame-1">1</div>
         <div class="frame frame-2">2</div>
@@ -19,6 +19,10 @@
         <div class="frame frame-8">8</div>
         <div class="frame frame-9">9</div>
         <div class="frame frame-10">10</div>
+
+        <div class="scrollbar" id="scrollbar"></div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
