@@ -1,0 +1,26 @@
+.container {
+  background: #2e3537;
+  width: 90%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent the expanding box from overflowing */
+}
+
+.viewport {
+  background-color: gray;
+  position: relative;
+  width: 100%;
+  height: 100%; /* Ensure the .viewport fills the container */
+}
+
+#expand {
+  background: #0380A7;
+  width: 20%; /* Initial width of the expand box */
+  height: 200px; /* Initial height of the expand box */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
